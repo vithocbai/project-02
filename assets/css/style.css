@@ -5,6 +5,8 @@
 :root {
     --primary-color: #171100;
     --primary-color-text-btn: #fff;
+    --primary-background: #fffcf4;
+    --primary-color-text: #5f5b53;
 }
 
 html {
@@ -33,7 +35,6 @@ a {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 185.714%;
 }
 
 .btn:hover {
@@ -46,10 +47,22 @@ a {
     margin-right: auto;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
 /* ==== Header ==== */
 .header {
-    background: #fffcf4;
-    padding: 36px 0 65px;
+    background: var(--primary-background);
+    padding: 36px 0 30px;
 }
 
 .navbar {
@@ -65,7 +78,7 @@ a {
 
 .navbar .link {
     padding: 12px 21px;
-    color: #5f5b53;
+    color: var(--primary-color-text);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 175%;
@@ -102,3 +115,111 @@ a {
     width: 144px;
     margin-left: 70px;
 }
+
+/* === Hero ===  */
+.hero {
+    padding-top: 34px;
+    background: #fffcf4;
+}
+
+.hero .image {
+    width: 49%;
+}
+
+.hero .image .hero-img {
+    width: 470px;  
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .content {
+    width: 51%;
+}
+
+.hero .info {
+    width: 79%;
+    margin-left: 130px;
+}
+
+
+.hero .heading {
+    width: 100%;
+    color: var(--primary-color);
+    font-family: "Sen", sans-serif;
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 117.241%;
+    letter-spacing: -1.16px;
+}
+
+.hero .desc {
+    width: 100%;
+    margin-top: 22px;
+    color: var(--primary-color-text);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.hero .watch-btn {
+    width: 180px;
+    height: 64px;
+    border-radius: 32px;
+    background: #ffb900;
+    font-size: 1.8rem;
+}
+
+.hero .watch-video {
+    margin: 38px 0 48px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .play-video {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 28px;
+}
+
+.hero .play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffb900;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+    background: #f2ebeb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
+}
+
+.hero .stats {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero .stats .desc {
+    margin-left: 5px;
+}
+
+.hero .quantity {
+    color: var(--primary-color);
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 122.727%;
+}
+
