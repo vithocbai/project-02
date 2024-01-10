@@ -503,3 +503,53 @@ button {
     line-height: 153.846%;
 }
 
+/* ==== Featured ==== */
+.featured {
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.featured .image {
+    display: flex;
+    gap: 30px;
+}
+
+.featured .image img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.featured .image .img-bottom {
+    margin-top: 34px;
+}
+
+.featured .content {
+    width: 41%;
+}
+
+.featured .sub-heading {
+    color: var(--primary-color);
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 126.316%;
+    letter-spacing: -0.76px;
+}
+
+.featured .desc {
+    margin-top: 16px;
+    width: 98%;
+    color: var(--primary-color-text);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.featured .btn-signup {
+    width: 137px;
+    margin-top: 32px;
+    border-radius: 26px;
+    background: #ffb900;
+}
