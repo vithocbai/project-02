@@ -67,6 +67,11 @@ button {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.active-dot {
+    background: var(--primary-background-hover) !important;
+}
+
 /* ==== Header ==== */
 .header {
     background: var(--primary-background);
@@ -257,13 +262,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-background-hover);
+    color: #fff;
     width: 40px;
     height: 40px;
     font-size: 1.4rem;
-    background: #f2ebeb;
+    background: #1caba9;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.hero .play-icon:hover {
+    opacity: 0.8;
 }
 
 .hero .play-video span {
@@ -294,7 +303,8 @@ button {
 
 /*==== Popular ==== */
 .popular {
-    margin-top: 200px;
+    margin-top: 100px;
+    padding: 100px 0;
 }
 
 .popular .wrap {
@@ -370,6 +380,10 @@ button {
     border-radius: 12px 12px 0px 0px;
 }
 
+.popular .list .thumb:hover {
+    opacity: 0.9;
+}
+
 .popular .list .title {
     color: var(--primary-color);
     font-size: 1.8rem;
@@ -405,12 +419,78 @@ button {
 
 .popular .row-bottom .price {
     color: var(--primary-color);
-font-size: 1.8rem;
-font-weight: 600;
-line-height: 166.667%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%;
 }
 
-.popular .btn-book:hover  {
+.popular .btn-book:hover {
     background: var(--primary-background-hover);
     transition: 0.3s linear;
 }
+
+/* === Blockquotes ==== */
+.feedback {
+    margin-top: 100px;
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback-item {
+    display: flex;
+    align-items: center;
+}
+
+.feedback .info .img-avt {
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    object-fit: cover;
+}
+
+.feedback .info .sub-title {
+    margin-top: 18px;
+    white-space: nowrap;
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 141.667%;
+}
+
+.feedback .info .desc {
+    white-space: nowrap;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%;
+}
+
+.feedback .dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.feedback .dot {
+    margin-top: 28px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.feedback .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 153.846%;
+}
+
