@@ -88,6 +88,11 @@ button {
 
 /* ==== Header ==== */
 .header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
     background: var(--primary-background);
     padding: 36px 0 30px;
 }
