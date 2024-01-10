@@ -160,7 +160,7 @@ button {
 }
 
 .hero .image .hero-img {
-    width: 82%;
+    width: 470px;
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
@@ -233,7 +233,7 @@ button {
 }
 
 .hero .wrap {
-    width: 79%;
+    max-width: 79%;
     margin-left: 130px;
 }
 
@@ -241,7 +241,7 @@ button {
     width: 100%;
     color: var(--primary-color);
     font-family: "Sen", sans-serif;
-    font-size: 5.6rem;
+    font-size: 5.4rem;
     font-weight: 600;
     line-height: 117.241%;
     letter-spacing: -1.16px;

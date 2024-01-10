@@ -51,13 +51,18 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Style css -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- Header Pc and Table-->
         <header class="header">
             <div class="container">
                 <!-- Navbar -->
                 <nav class="navbar">
+                    <!-- Menu -->
+                    <!-- <button class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button> -->
                     <!-- Logo -->
                     <a href="#!">
                         <img src="./assets/icon/logo.svg" alt="" class="logo" />
@@ -86,8 +91,10 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Header Mobile -->
         <!-- Main -->
-        <main style="height: 5000px">
+        <main>
             <!-- Hero -->
             <div class="hero">
                 <div class="container">
@@ -190,7 +197,7 @@
             </div>
 
             <!-- Popular -->
-            <div class="popular">
+            <div class="popular" hidden>
                 <div class="container">
                     <div class="wrap">
                         <div class="info">
@@ -332,7 +339,7 @@
             </div>
 
             <!--Feedback -->
-            <div class="feedback">
+            <div class="feedback" hidden>
                 <div class="container">
                     <div class="feedback-list">
                         <!--Feedback item 1 -->
@@ -447,7 +454,7 @@
             </div>
 
             <!-- Featured -->
-            <div class="featured">
+            <div class="featured" hidden>
                 <div class="container">
                     <div class="row">
                         <div class="image">
@@ -476,7 +483,7 @@
                     </div>
                 </div>
             </div>
-            <div class="featured featured-1">
+            <div class="featured featured-1" hidden>
                 <div class="container">
                     <div class="row">
                         <div class="content">
@@ -503,7 +510,7 @@
             </div>
 
             <!-- Blog -->
-            <div class="blog">
+            <div class="blog" hidden>
                 <div class="container">
                     <div class="info">
                         <h2 class="sub-heading">Our blog</h2>
@@ -579,7 +586,7 @@
             </div>
 
             <!-- Footer  -->
-            <footer class="footer">
+            <footer class="footer" style="display: none">
                 <div class="container">
                     <div class="footer-row">
                         <!-- Column 1 -->
