@@ -436,9 +436,18 @@ button {
     background: #2e2100;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
+    flex-shrink: 0;
+    width: 100%;
     display: flex;
     align-items: center;
+    transform: translateX(-100%);
+    transition: all 0.4s linear;
 }
 
 .feedback .info .img-avt {
