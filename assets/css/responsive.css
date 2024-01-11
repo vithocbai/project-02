@@ -13,6 +13,7 @@
         display: flex;
         flex-direction: column;
     }
+    
     .hero .image {
         width: 100%;
         order: 0;
@@ -135,5 +136,29 @@
         line-height: 3.2;
     }
 
+    .hero .image {
+        display: none;
+    }
 
+    .hero .heading {
+        font-size: 4rem;
+    }
+
+    .hero .desc,
+    .hero .stats {
+        display: none;
+    }
+
+    .hero .watch-video {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .hero .watch-btn {
+        order: 1;
+    }
+    .hero .play-video {
+        order: 0;
+        margin-left: 0;
+    }
 }
