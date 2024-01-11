@@ -47,6 +47,14 @@
     .hero .stats {
         justify-content: center;
     }
+
+    .popular {
+        margin-top: 0;
+    }
+
+    .feedback {
+        margin-top: 0;
+    }
 }
 
 /* Tablet  */
@@ -167,21 +175,16 @@
         margin-left: 0;
     }
 
-    .popular {
-        margin-top: 0;
-    }
-
     .popular .wrap {
         flex-direction: column;
         row-gap: 18px;
-        
     }
 
     .popular .sub-heading {
         font-size: 2.8rem;
         text-align: center;
     }
-    
+
     .popular .wrap .desc {
         display: none;
     }
@@ -189,5 +192,22 @@
     .popular .list {
         grid-template-columns: 1fr;
         row-gap: 30px;
+    }
+    
+    .feedback-item {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .feedback .info {
+        text-align: center;
+    }
+
+    .dots {
+        justify-content: center;
+    }
+
+    .feedback .content {
+        width: 100%;
     }
 }
