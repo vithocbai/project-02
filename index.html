@@ -70,7 +70,7 @@
                     </a>
 
                     <!-- Navigation -->
-                    <ul>
+                    <ul id="pctablet-nav">
                         <li>
                             <div class="active">Home</div>
                         </li>
@@ -82,6 +82,9 @@
                         </li>
                         <li>
                             <a href="#!" class="link">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="link signup on-mobile">Sign Up</a>
                         </li>
                     </ul>
 
@@ -113,22 +116,13 @@
                     <i class="fa-solid fa-xmark"></i>
                 </label>
                 <!-- Navigation -->
-                <ul>
-                    <li>
-                        <a href="#!" class="link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="link">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="link">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="link">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="link signup">Sign Up</a>
-                    </li>
+                <ul id="mobile-nav">
+                    <script>
+                       const pctabletnav = document.querySelector("#pctablet-nav");
+                       const mobilenav = document.querySelector("#mobile-nav");
+
+                       mobilenav.innerHTML = pctabletnav.innerHTML;
+                    </script>
                 </ul>
             </div>
         </header>

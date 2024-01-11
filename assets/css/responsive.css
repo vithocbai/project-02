@@ -1,7 +1,8 @@
 /* Pc */
 @media screen and (min-width: 992px) {
     .menu-toggle,
-    .menu-drawers  {
+    .menu-drawers, 
+    .on-mobile {
         display: none;
     }
 }
@@ -50,10 +51,11 @@
 /* Tablet  */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     .menu-toggle,
-    .menu-drawers  {
+    .menu-drawers,
+    .on-mobile  {
         display: none;
     }
-    
+
     .navbar .action-btn {
         margin-left: 55px;
     }
@@ -61,6 +63,7 @@
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
+
     .menu-toggle {
         font-size: 2.4rem;
     }
