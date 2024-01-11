@@ -60,9 +60,10 @@
                 <!-- Navbar -->
                 <nav class="navbar">
                     <!-- Menu -->
-                    <!-- <button class="menu">
+                    <label for="checkbox" class="menu-toggle">
                         <i class="fa-solid fa-bars"></i>
-                    </button> -->
+                    </label>
+
                     <!-- Logo -->
                     <a href="#!">
                         <img src="./assets/icon/logo.svg" alt="" class="logo" />
@@ -93,6 +94,44 @@
         </header>
 
         <!-- Header Mobile -->
+        <header class="header-mobile">
+            <!-- Input -->
+            <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+
+            <!-- Overlay -->
+            <label for="checkbox" class="overlay"></label>
+
+            <!-- menu drawers -->
+            <div class="menu-drawers">
+                <label for="checkbox" class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <!-- Navigation -->
+                <ul>
+                    <li>
+                        <a href="#!" class="link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="link">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="link">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="link signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <!-- Main -->
         <main>
             <!-- Hero -->
