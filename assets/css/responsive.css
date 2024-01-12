@@ -77,6 +77,10 @@
     .blog {
         margin-top: 0;
     }
+
+    .footer .column {
+        width: 100% !important;
+    }
 }
 
 /* Tablet  */
@@ -107,6 +111,12 @@
     .blog-list {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
+    }
+
+    .footer .footer-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 36px;
     }
 }
 
@@ -296,5 +306,11 @@
 
     .blog .sub-heading {
         font-size: 2.8rem;
+    }
+
+    .footer .footer-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 36px;
     }
 }
